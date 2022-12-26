@@ -1,0 +1,27 @@
+ 
+ To deploy in firebase
+
+ npm run build 
+
+ it will create a new version of the build folder
+Copy build/ folder to build/ folder
+
+
+For deploying on firebase run:
+
+firebase deploy --only hosting 
+firebase deploy --only functions 
+
+Modifications for content development must be in 
+reducer.js 
+
+Modifications for front-end images must be made in :
+public/img 
+
+For email integration check firebase functions script and identify alll email function with the prefix 
+email[FUNCTION NAME]
+Menu integrations
+User must be authenticated to show logout and myPayments section
+
+My payments integration
+We are using stripe interface for payment functionalities like cancel subscriptions and other administrative tasks
